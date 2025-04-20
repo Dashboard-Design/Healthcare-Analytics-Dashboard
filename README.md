@@ -1,6 +1,8 @@
 # Healthcare Analytics Dashboard
 This Streamlit application provides interactive analytics and insights from a dataset of 55,500 patient records across 10 U.S. hospitals. It features sections on patient demographics, hospital performance, insurance and billing, and trends and forecasting. The dashboard uses Plotly for visualizations and employs machine learning techniques, including K-Prototypes clustering, to uncover patterns in patient data and billing.
 
+![Image](https://github.com/user-attachments/assets/833c9a50-c722-4cac-8295-4fa40ebcfa6b)
+
 The Onyx Data DNA April 2025 Challenge provided this dataset, and I developed the Streamlit app as part of our competition submission.
 
 
