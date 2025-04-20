@@ -1,0 +1,459 @@
+.stAppHeader {
+  display: none;
+}
+
+[data-testid="stSidebarNav"] {
+  display: none;
+}
+
+[data-testid="stMain"] {
+  padding-top: 0px;
+  background-color: #fcfcfc;
+}
+
+.stMainBlockContainer {
+  padding-top: 0px;
+}
+
+[data-testid="stSidebarContent"] {
+  background-color: #ffffff;
+  border-color: #485785;
+}
+
+[data-testid="stSidebarUserContent"] {
+  padding: 24px 24px 40px;
+}
+
+[data-testid="stSidebarHeader"] {
+  padding: 0px;
+}
+
+/* Sidebar styling */
+.sidebar-header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #485785;
+}
+
+.sidebar-section-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Style the tab buttons to look like navigation */
+.stTabs [data-baseweb="tab-list"] {
+  gap: 54px;
+  background-color: #ffffff;
+  padding: 18px 30px; /* Increased padding for more height */
+  border-radius: 4px;
+  margin-top: 50px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.stTabs [data-baseweb="tab"] {
+  height: 50px;
+  white-space: pre-wrap;
+  color: rgb(145, 145, 145);
+  font-weight: 500;
+  border-radius: 4px;
+}
+.stTabs [aria-selected="true"] {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgb(20, 20, 20);
+}
+
+/* h3 is the KPI title in the html */
+
+h3.sub {
+  margin-top: 32px;
+  color: #3a3a3a;
+}
+
+.numberOfPatients {
+  color: #3a3a3a;
+  display: flex;
+  align-items: baseline;
+}
+
+.numberOfPatients h3 {
+  margin-right: 0px; /* Reduce this value to decrease the gap */
+  margin-bottom: 0;
+}
+
+.numberOfPatients p {
+  color: #aaaaaa;
+  margin: 0px;
+  padding: 0px;
+}
+
+.kpi-container {
+  background-color: white;
+  border-radius: 5px;
+  padding: 25px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.kpi-title {
+  color: #485785;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.kpi-value {
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.kpi-up {
+  color: #4caf50;
+  font-size: 18px;
+}
+.kpi-down {
+  color: #f44336;
+  font-size: 18px;
+}
+.kpi-compare {
+  color: #888;
+  font-size: 15px;
+}
+
+/* Reduce gap between sidebar paragraphs */
+/* Update these classes in your assets/styles.css file */
+.simpleTextFirst,
+.simpleText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Gap between <p> tags within the class */
+  margin: 22px 0; /* Margin between classes (top and bottom) */
+  padding: 0;
+  color: #888;
+  font-size: 0.92rem;
+}
+
+/* For the first instance, remove top margin to maintain consistent spacing */
+.simpleTextFirst {
+  margin-top: 20px;
+}
+
+.simpleTextFirst p,
+.simpleText p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.textBlak {
+  font-weight: 500;
+  color: #333;
+  font-size: 0.92rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the time period selector */
+[data-testid="stSelectbox"] {
+  margin: 42px 0 20px 0;
+}
+
+/* Style the date input section */
+[data-testid="stDateInput"] {
+  margin: 15px 0;
+}
+
+/* Style info boxes in sidebar */
+[data-testid="stAlert"] {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Main Navigation */
+.nav-link {
+  color: rgb(145, 145, 145) !important; /* Force grey color */
+  font-weight: 500;
+  text-decoration: none !important;
+  position: relative;
+  display: inline-block;
+  padding: 10px 10px 15px 10px; /* Add padding at bottom for distance from the line */
+  margin-bottom: 0;
+  margin-right: 20px;
+  margin-left: 20px;
+  max-height: 100%;
+}
+
+div[data-baseweb="tab-list"] {
+  position: relative;
+  padding-bottom: 0 !important; /* Space for the line */
+  border-bottom: 2px solid #e0e0e0 !important; /* Continuous light grey line */
+  height: 75px;
+  columns: 24ch;
+  overflow-x: scroll !important;
+}
+
+/* Hover state */
+.nav-link:hover {
+  color: rgb(20, 20, 20) !important;
+}
+
+/* Active state - override the grey line with blue */
+.nav-link[data-active="true"] {
+  color: #485785 !important;
+  font-weight: 600;
+}
+
+/* Active indicator that sits on top of the continuous line */
+.nav-link[data-active="true"]::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 2.5px; /* Position it on top of the continuous line */
+  left: 0;
+  width: 100%; /* Width of the link */
+  height: 3px;
+  background-color: #2f88ff; /* Blue indicator */
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none !important;
+}
+
+/* Style for the multiselect dropdown */
+
+[data-testid="stMultiSelect"] {
+  margin: 32px 0 20px 0;
+}
+
+/* Style for the default text (placeholder) */
+[data-testid="stMultiSelect"] div.st-cu {
+  color: #333 !important; /* Change placeholder to black */
+}
+
+/* Style for the selected tags */
+[data-baseweb="tag"] {
+  background-color: #2f88ff !important; /* Change from red to your blue theme */
+  border-radius: 4px !important;
+}
+
+/* Style for the text inside selected tags */
+[data-baseweb="tag"] span {
+  color: white !important;
+}
+
+/* Style for the close (x) button in tags */
+[data-baseweb="tag"] button {
+  color: white !important;
+}
+
+/* Style for the multiselect container */
+[data-testid="stMultiSelect"] > div:first-child {
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+/* Container for metrics sections --- Page 2*/
+
+ul.sub {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+ul.sub2 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 20px;
+}
+
+/* Container for metrics sections --- Page 1*/
+.st-key-sunburst {
+  background-color: white;
+  border-radius: 5px;
+  padding: 25px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for underperforming hospitals --- Page 2*/
+
+.underperforming {
+  background-color: #ffffff00;
+  padding: 0px 25px 25px 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.underperforming-list {
+  border-left: 4px solid #ff6b6b;
+  margin-top: 5px;
+  columns: 2;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+.toggle-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+
+/* Container for Trends & Forecasting sections --- Page 4*/
+.st-key-background {
+  background-color: white;
+  border-radius: 5px;
+  padding: 25px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.st-key-background-2 {
+  background-color: white;
+  border-radius: 5px;
+  padding: 25px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.st-key-background-2 > [data-testid="stHorizontalBlock"] {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 25px;
+  box-shadow: none;
+}
+
+.st-key-help_button {
+  color: #2f89ffc4;
+  background: #fff;
+  padding: 0;
+}
+[data-testid="stBaseButton-secondary"] {
+  background: white;
+  padding: 5px;
+  min-height: 0;
+}
+
+/*                       */
+/* Help section styling */
+/*                      */
+
+.st-key-help-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 35px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+  position: relative;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.st-key-help-container .help-title {
+  color: #2f88ff;
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  padding-bottom: 25px;
+  padding-top: 5px;
+  margin: 0;
+}
+
+.st-key-help-container .st-key-help_head {
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.st-key-help_head > [data-testid="stHorizontalBlock"] {
+  padding: 0px;
+  background-color: none;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.help-section {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.help-section h3 {
+  color: #485785;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.help-section ul {
+  padding-left: 25px;
+}
+
+.help-section li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.help-section p {
+  line-height: 1.1;
+}
+
+.page-specific {
+  background-color: #f8f9fa;
+  padding: 15px 15px 10px 15px;
+  border-radius: 8px;
+  margin-top: 0px;
+}
+
+.attribution {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
+
+.st-key-close_help {
+  background: #fff;
+  color: #2f89ffc4;
+  border: none;
+  border-radius: 5px;
+  padding: 0px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.st-key-close_help:hover {
+  background-color: #e9ecef;
+}
+
+.st-key-helpBlock > [data-testid="stHorizontalBlock"] {
+  padding: 0px;
+  background-color: none;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+/* insurance kpis */
+.st-key-insuranceKPIs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
