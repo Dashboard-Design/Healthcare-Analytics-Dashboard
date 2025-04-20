@@ -3,7 +3,7 @@ This Streamlit application provides interactive analytics and insights from a da
 
 ![Image](https://github.com/user-attachments/assets/833c9a50-c722-4cac-8295-4fa40ebcfa6b)
 
-The Onyx Data DNA April 2025 Challenge provided this dataset, and I developed the Streamlit app as part of our competition submission.
+The Onyx Data DNA April 2025 Challenge provided this dataset, and I developed the Streamlit app as part of my competition submission.
 
 
 ## Features
